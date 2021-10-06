@@ -6,8 +6,8 @@ Feature: Busca Zoom
   @buscarProduto
   Scenario Outline: Buscar produto zoom
     Given eu acesso a pagina principal
-    And preencho o campo de <busca>
-    #And clico no icone de busca
+    When preencho o campo de "<busca>"
+    And clico no icone de busca
     #Then valido se o <produtoRetornado> esta correto
     
     Examples:

@@ -4,6 +4,12 @@ import org.openqa.selenium.By;
 
 public class BasePage {
 	
+	/********* Utils ************/
+	public static void openHomePage(String url) {
+		DriverFactory.getDriver().get(url);
+	}
+	
+	
 	/********* Write ************/
 	
 	public static void write(By by, String texto) {
