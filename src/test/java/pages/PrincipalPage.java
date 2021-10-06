@@ -17,14 +17,14 @@ public class PrincipalPage extends BasePage{
 	}
 	public static void buscaProduto(String buscaProdutoParam){
 		try{
-			write(By.xpath("//*[@id=\"new-header\"]/div/div/div[1]/div[3]/div/div/div[1]/input"), buscaProdutoParam);
+			write(By.xpath("//input[@type='search']"), buscaProdutoParam);
 		}catch(Exception e){
 			System.err.print("Elemento não encontrado");
 		}
 		}
 	public static void clicarIconeBusca() {
 		try {
-			click(By.xpath("//*[@id=\"new-header\"]/div/div/div[1]/div[3]/div/div/div[1]/button"));
+			click(By.xpath("//button[@class='search-bar__submit-button']"));
 		} catch (Exception e) {
 			System.err.print("Elemento não encontrado");
 		}
