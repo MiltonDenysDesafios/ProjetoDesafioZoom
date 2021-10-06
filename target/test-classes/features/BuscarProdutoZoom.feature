@@ -8,10 +8,10 @@ Feature: Busca Zoom
     Given eu acesso a pagina principal
     When preencho o campo de "<busca>"
     And clico no icone de busca
-    #Then valido se o <produtoRetornado> esta correto
+    Then valido se o produto buscado "<produtoRetornado>" esta correto
     
     Examples:
     |busca			|produtoRetornado	|
-    |computador	|celular					|
+    |Computador	|Computador				|
 
 

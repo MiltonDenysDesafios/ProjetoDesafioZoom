@@ -21,9 +21,9 @@ public class Steps {
 		PrincipalPage.clicarIconeBusca();
 	} 
 	
-	@Then("^valido se o \"([^\"]*)\" esta correto$")
-	public void validaBuscaProduto() {
-	   
+	@Then("valido se o produto buscado \"([^\"]*)\" esta correto$")
+	public void validaBuscaProduto(String produtoValidado) {
+	   PrincipalPage.validarProduto(produtoValidado);
 	}
 	   
    
