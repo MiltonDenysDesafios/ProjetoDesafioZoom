@@ -13,5 +13,7 @@ Feature: Busca Zoom
     Examples:
     |busca			|produtoRetornado	|
     |Computador	|Computador				|
+    |Celular		|Celular					|
+    |Console		|Console					|
 
 

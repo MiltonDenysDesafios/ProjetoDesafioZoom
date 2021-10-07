@@ -48,7 +48,7 @@ public class DriverFactory {
 	}
 	@After
 	public void finaliza() throws IOException{			
-		//killDriver();
+		killDriver();
 		
 	}
 }

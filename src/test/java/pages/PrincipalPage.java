@@ -32,9 +32,7 @@ public class PrincipalPage extends BasePage{
 	}
 	public static void validarProduto(String retornoProduto) {
 		try {
-			String produtoRetornado = obterTexto(By.xpath("//*[@id=\"pageSearchResultsBody\"]/div/div/div/div[1]/h1"));
-			String produtoRetornado1 = obterTexto(By.xpath("//div[@id='pageSearchResultsBody']"));
-			System.out.println(produtoRetornado1);
+			String produtoRetornado = obterTexto(By.xpath("//h1[@class='SearchHeader_title__2hI7I']"));
 			Assert.assertEquals(retornoProduto, produtoRetornado);
 		} catch (Exception e) {
 			System.err.print("Elemento não encontrado");
